@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @ToString
 public class User {
     @Id
-    @Column(length = 14)
+    @Column(length = 100)
     private String username;
 
     @Column(length = 50)

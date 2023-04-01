@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+
+#data base specific properties
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/securesparkapp?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true

@@ -31,7 +31,6 @@ public class StorageController {
         byte[] imageData=service.downloadImageFromFileSystem(fileName);
         return ResponseEntity.ok()
                 .contentType(MediaType.valueOf("image/png"))
-                .contentType(MediaType.valueOf("application/pdf"))
                 .body(imageData);
 
     }

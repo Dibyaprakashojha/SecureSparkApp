@@ -31,7 +31,7 @@ public class StorageServiceImpl implements StorageService{
         file.transferTo(new File(filePath));
 
         if (fileData != null) {
-            return "file uploaded successfully : " + filePath;
+            return String.valueOf(fileData.getFileId());
         }
         return null;
     }

@@ -2,10 +2,7 @@ package com.acxtech.securesparkapp.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @AllArgsConstructor
@@ -17,8 +14,7 @@ import javax.persistence.Id;
 public class FileData {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
+    private Long fileId;
     private String name;
     private String type;
     private String filePath;

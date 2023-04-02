@@ -28,6 +28,5 @@ public class UserDetails {
     @Column(length = 55)
     private String hobbies;
 
-    @Column(length = 55)
-    private String photoUrl;
+    private String fileId;
 }
